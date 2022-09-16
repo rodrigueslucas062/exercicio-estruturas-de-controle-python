@@ -2,17 +2,10 @@
 
 import math
 
-entrada = 1
-
-entrada = int(input("Digite um número para calcular, para sair digite um numero menor ou igual a zero"))
-
-while entrada > 0:    
-    quadrado = entrada**2    
-    cubo = entrada**3     
-    raiz = math.sqrt(entrada)
-    if entrada >= 0: 
-        print(f"O quadrado é: {quadrado}")
-        print(f"O cubo é: {cubo}") 
-        print(f"A raiz é: {raiz}")
-    else:
-        print('Programa encerrado')
+numero = 1
+while numero >= 1: 
+    numero = int(input('Digite um número: '))
+    quadrado = numero ** 2
+    cubo = numero ** 3
+    raiz = math.sqrt(numero)
+    print(f'Número: {numero}\n Seu quadrado: {quadrado}\n Seu cubo: {cubo}\n Raiz quadrada: {raiz}')
